@@ -1,0 +1,52 @@
+{
+  "name": "gulp-starter",
+  "version": "1.0.0",
+  "description": "A starter template by using gulp.js",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp production"
+  },
+  "keywords": [
+    "gulp",
+    "gulp starter",
+    "rapid development",
+    "use gulp",
+    "gulp"
+  ],
+  "author": {
+    "name": "Mohamed Ibrahim",
+    "email": "engmohamed2017@hotmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m-ibrahim17/gulp-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/m-ibrahim17/gulp-starter/issues"
+  },
+  "homepage": "https://github.com/m-ibrahim17/gulp-starter",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.23.6",
+    "browserify": "^15.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "mdbootstrap": "^4.4.4",
+    "node-waves": "^0.7.6"
+  }
+}

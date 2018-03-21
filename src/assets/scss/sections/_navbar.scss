@@ -1,0 +1,38 @@
+/* Top Navbar */
+.navbar {
+  height: 80px;
+  &.top-nav-collapse {
+    .nav-item {
+      .nav-link {
+        color: $white;
+      }
+    }
+  }
+}
+
+/* Side Navbar */
+#sideNav {
+  display: none;
+  @include setPosition(fixed, 0, auto, 0, -450px, 102);
+  width: 100%;
+  background: $sideNav;
+  ul {
+    li {
+      a {
+        color: set-text-color($sideNav);
+        transition: all 0.7s ease;
+        text-align: center;
+        &.active, &:hover {
+          background: $white;
+          color: set-text-color($white);
+        }
+      }
+    }
+  }
+}
+
+.overlay {
+  display: none;
+  @include setPosition(fixed, 0, 0, 0, 0, 101);
+  background: $rgba-black-light;
+}

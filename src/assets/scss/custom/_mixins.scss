@@ -1,0 +1,24 @@
+@function set-text-color($bg-color) {
+  @if(lightness($bg-color) > 50) {
+    @return $black;
+  } @else {
+    @return $white;   
+  }
+}
+
+@mixin setPosition($position: relative, $top: auto, $right: auto, $bottom: auto, $left: auto, $zindex: 1) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $zindex;
+}
+
+@mixin setBefore($position, $top, $right, $bottom, $left, $zindex, $width, $height, $color) {
+  content: '';
+  @include setPosition($position, $top, $right, $bottom, $left, $zindex);
+  width: $width;
+  height: $height;
+  background: $color;
+}

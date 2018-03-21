@@ -1,0 +1,17 @@
+/* Custom Helper Clasess */
+body {
+  font-family: 'Lato', sans-serif !important;
+  overflow-x: hidden;
+}
+
+.stepsBg {
+  background: $stepsBg;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.oh {
+  overflow: hidden;
+}

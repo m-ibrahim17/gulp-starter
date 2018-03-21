@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="" dir="ltr" itemscope itemtype="http://schema.org/Product">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Title Here</title>
+  <meta name="description" content="Page description. No longer than 155 characters." />
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Mohamed Ibrahim">
+
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="The Name or Title Here">
+  <meta itemprop="description" content="This is the page description">
+  <meta itemprop="image" content="http://www.example.com/image.jpg">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="product">
+  <meta name="twitter:site" content="@publisher_handle">
+  <meta name="twitter:title" content="Page Title">
+  <meta name="twitter:description" content="Page description less than 200 characters">
+  <meta name="twitter:creator" content="@author_handle">
+  <meta name="twitter:image" content="http://www.example.com/image.jpg">
+  <meta name="twitter:image:alt" content="Alt text for image">
+  <meta name="twitter:data1" content="$3">
+  <meta name="twitter:label1" content="Price">
+  <meta name="twitter:data2" content="Black">
+  <meta name="twitter:label2" content="Color">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Title Here" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.example.com/" />
+  <meta property="og:image" content="http://example.com/image.jpg" />
+  <meta property="og:description" content="Description Here" />
+  <meta property="og:site_name" content="Site Name, i.e. Moz" />
+  <meta property="og:price:amount" content="15.00" />
+  <meta property="og:price:currency" content="USD" />
+
+  <!-- Font URL -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    #loaderCont {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="loaderCont">Loader..</div>
+  <!--Main Navigation-->
+  <header>
+    <!-- Side nav -->
+    <div id="sideNav" class="sideNav d-md-none">
+      <div class="col-12 px-3">
+        <div class="closeBtn p-3 float-right text-center"><img src="assets/image/close.png" title="Close" class=""></div>
+      </div>
+      <ul class="nav col-12 flex-column mt-4">
+        <li class="h3"><a class="nav-link w-100 waves-effect text-uppercase" href="#link1">link1</a></li>
+        <li class="h3"><a class="nav-link w-100 waves-effect text-uppercase" href="#link2">link2</a></li>
+        <li class="h3"><a class="nav-link w-100 waves-effect text-uppercase" href="#link3">link3</a></li>
+        <li class="h3"><a class="nav-link w-100 waves-effect text-uppercase" href="#link4">link4</a></li>
+        <li class="h3"><a class="nav-link w-100 waves-effect text-uppercase" href="#link5">link5</a></li>
+      </ul>
+    </div>
+    <div class="overlay"></div>
+    <!-- Side nav -->
+    <!-- Nav Bar Section -->
+    <nav id="topNav" class="navbar fixed-top navbar-light scrolling-navbar white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">
+          <strong>Demo</strong>
+        </a>
+        <button id="sideNavBtn" class="navbar-toggler d-md-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-none d-md-flex col">
+          <ul class="navbar-nav flex-row align-items-center justify-content-center w-100">
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#link1">link1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#link2">link2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#link3">link3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#link4">link4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#link5">link5</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav Bar Section -->
+    <!-- Intro Section -->
+    <div id="home" class="home grey lighten-4 py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="h2 font-weight-bold mb-3">Lorem ipsum</h1>
+          </div>
+          <div class="col-12 col-md-9 mx-auto">
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ratione at eveniet aperiam explicabo deleniti vel ex. Molestias vitae iure eos. Repellendus minus similique non animi incidunt laboriosam iusto dicta?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main Navigation -->
+
+  <script src="assets/js/vendors.js"></script>
+  <script src="assets/js/index.js"></script>
+  <!-- Hide Loader after page loading -->
+  <script>
+    // window.addEventListener('load', function () { setTimeout(function () { document.getElementById('loaderCont').style.display = 'none' }, 1e3) })
+  </script>
+</body>
+</html>

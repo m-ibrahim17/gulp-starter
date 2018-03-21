@@ -1,0 +1,30 @@
+/* Desktop Layout (max-width: 1199.98px)*/
+@media #{$desktop} {
+  /* Home Section */
+  #home {
+    color: $green;
+  }
+}
+
+/* Tablet Layout (max-width: 991.98px)*/
+@media #{$tablet} {
+  /* Home Section */
+  #home {
+    color: $orange;
+  }
+}
+
+/* Mobile Landscape Layout (max-width: 767.98px)*/
+@media #{$landscape} {
+  #home {
+    color: $black;
+  }
+}
+
+/* Mobile Layout (max-width: 575.98px)*/
+@media #{$mobile} {
+  /* Home Section */
+  #home {
+    color: $blue-grey;
+  }
+}
