@@ -20,10 +20,12 @@ Package | Usage
 
 # Get started
 
-`git clone https://github.com/m-ibrahim17/gulp-starter.git`
+```
+git clone https://github.com/m-ibrahim17/gulp-starter.git
 
-`cd gulp-starter`
+cd gulp-starter
 
-`npm install`
+npm install
 
-`npm start`
+npm start
+```
