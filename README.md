@@ -17,7 +17,14 @@ Package | Usage
 [vinyl-source-stream](https://github.com/hughsk/vinyl-source-stream) | Conventional text streams at the start of your gulp.
 [babelify](https://github.com/babel/babelify) | Browserify transform for Babel.
 [gulp-concat](https://github.com/gulp-community/gulp-concat) | Concatinate files together.
+[node-waves](https://github.com/fians/Waves) | Click effect inspired by Google's Material Design.
 
+Framework | Definition
+--------- | ----------
+[Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) | A front-end framework for building responsive, mobile-first websites and apps.
+[MDBootstrap](https://mdbootstrap.com/) | Material Design for Bootstrap 4.
+[jQuery](http://jquery.com/) | Manipulate the DOM.
+[Font Awesome 4.7](https://fontawesome.com/v4.7.0/icons/) | The iconic font and CSS toolkit.
 # Get started
 
 ```

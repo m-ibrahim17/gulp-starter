@@ -12,7 +12,8 @@
     "gulp starter",
     "rapid development",
     "use gulp",
-    "gulp"
+    "gulp example",
+    "sass with gulp"
   ],
   "author": {
     "name": "Mohamed Ibrahim",
@@ -42,11 +43,5 @@
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "vinyl-source-stream": "^2.0.0"
-  },
-  "dependencies": {
-    "bootstrap": "^4.0.0",
-    "jquery": "^3.3.1",
-    "mdbootstrap": "^4.4.4",
-    "node-waves": "^0.7.6"
   }
 }
