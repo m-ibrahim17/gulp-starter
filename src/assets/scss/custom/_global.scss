@@ -1,15 +1,17 @@
 /* Custom Helper Clasess */
 body {
-  font-family: 'Lato', sans-serif !important;
+  font-family: 'IBM Plex Sans', sans-serif !important;
   overflow-x: hidden;
-}
-
-.stepsBg {
-  background: $stepsBg;
 }
 
 .section {
   min-height: 100vh;
+  // .title {
+  //   position: relative;
+  //   &:before {
+  //     @include setBefore(absolute, auto, auto, -15px, 0px, 1, 75px, 5px, $defDash);
+  //   }
+  // }
 }
 
 .oh {

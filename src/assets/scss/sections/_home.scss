@@ -1,3 +1,7 @@
+/* Home Section */
 #home {
-  color: $blue;
+  background: url('../image/image.jpg') fixed center center no-repeat;
+  background-size: cover;
+  max-height: 100vh;
+  color: $white;
 }

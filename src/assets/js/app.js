@@ -14,33 +14,11 @@ $(document).ready(function (e) {
     }, 2000)
   })
 
-  // Remove Wave Effect
-  $('#home').find('.mask').removeClass('waves-effect waves-light')
-
   /* WOW init */
   const wow = new WOW({
     mobile: false
   })
   wow.init()
-
-
-  let navOffset = $('#wideImage').offset().top
-  if ($(this).scrollTop() >= navOffset){
-    $('#stickyNav').addClass('fixed-top')
-  } else {
-    $('#stickyNav').removeClass('fixed-top')      
-  }
-  $(window).scroll(function(){
-    let navOffset = $('#wideImage').offset().top
-    if ($(this).scrollTop() >= navOffset){
-      $('#stickyNav').addClass('fixed-top')
-    } else {
-      $('#stickyNav').removeClass('fixed-top')      
-    }
-  })
-
-  // FAQ Collapse
-  $('.collapse').collapse()
 
 })
 

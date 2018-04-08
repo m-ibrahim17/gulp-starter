@@ -2,7 +2,10 @@
 @media #{$desktop} {
   /* Home Section */
   #home {
-    color: $green;
+    video {
+      width: auto;
+      height: 100%;
+    }
   }
 }
 
@@ -10,21 +13,96 @@
 @media #{$tablet} {
   /* Home Section */
   #home {
-    color: $orange;
+    .display-4 {
+      font-size: 3rem;
+    }
   }
 }
-
-/* Mobile Landscape Layout (max-width: 767.98px)*/
-@media #{$landscape} {
-  #home {
-    color: $black;
-  }
-}
-
 /* Mobile Layout (max-width: 575.98px)*/
 @media #{$mobile} {
+  /* Default Title Dash */
+  .full-height {
+    header {
+      height: auto;
+    }
+  }
+  .section {
+    .title {
+      &:before {
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
   /* Home Section */
   #home {
-    color: $blue-grey;
+    .display-4 {
+      font-size: 2.5rem;
+    }
+  }
+  /* Image Size */
+  #aboutus {
+    img {
+      max-width: 70%;
+    }
+  }
+  /* Why Us Section */
+  #whyUs {
+    .title {
+      &:before {
+        top: 60px;
+        left: 50%;
+        background: $white;
+      }
+    }
+  }
+  /* Services Section */
+  #services {
+    .card {
+      box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.24),
+                  0 5px 15px 0 rgba(0, 0, 0, 0.19);
+      .card-body {
+        .nav-tabs {
+          .nav-item {
+            max-height: 35px;
+            border-radius: 10px;
+            line-height: 35px;
+            white-space: nowrap;
+            max-width: 21.35%;
+            margin: 5px;
+            &.animateTab {
+              right: auto;
+              bottom: -15px;
+            }
+            .serv3 {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+    .tab-content {
+      p {
+        text-align: center;
+      }
+    }
+  }
+  /* Training Section */
+  #training {
+    p {
+      text-align: center;
+    }
+  }
+  /* Contact Us Section */
+  #contactUs {
+    .mapContainer {
+      .mapOverlay {
+        top: auto;
+        height: 70px;
+        justify-content: baseline;
+        width: 100%;
+      }
+    }
   }
 }

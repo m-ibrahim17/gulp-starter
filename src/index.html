@@ -56,11 +56,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background: grey;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <div id="loaderCont">Loader..</div>
+  <div id="loaderCont">Loader ...</div>
   <!--Main Navigation-->
   <header>
     <!-- Side nav -->
@@ -110,14 +112,14 @@
     </nav>
     <!-- Nav Bar Section -->
     <!-- Intro Section -->
-    <div id="home" class="home grey lighten-4 py-4">
+    <div id="home" class="home grey lighten-4 py-4 d-flex align-items-center section">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
             <h1 class="h2 font-weight-bold mb-3">Lorem ipsum</h1>
           </div>
           <div class="col-12 col-md-9 mx-auto">
-            <p class="text-justify">
+            <p class="text-justify lead">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ratione at eveniet aperiam explicabo deleniti vel ex. Molestias vitae iure eos. Repellendus minus similique non animi incidunt laboriosam iusto dicta?
             </p>
           </div>
@@ -131,7 +133,7 @@
   <script src="assets/js/index.js"></script>
   <!-- Hide Loader after page loading -->
   <script>
-    // window.addEventListener('load', function () { setTimeout(function () { document.getElementById('loaderCont').style.display = 'none' }, 1e3) })
+    window.addEventListener('load', function () { setTimeout(function () { document.getElementById('loaderCont').style.display = 'none' }, 1e3) })
   </script>
 </body>
 </html>
