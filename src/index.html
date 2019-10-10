@@ -45,21 +45,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
   <!-- Style Sheet -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <style>
-    #loaderCont {
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: grey;
-      color: white;
-    }
-  </style>
+  <!-- Loader Style -->
+  <style>#loaderCont {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 9999;display: flex;justify-content: center;align-items: center;background: grey;color: white;}</style>
 </head>
 <body>
   <div id="loaderCont">Loader ...</div>
@@ -87,7 +74,7 @@
           <strong>Demo</strong>
         </a>
         <button id="sideNavBtn" class="navbar-toggler d-md-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa fa-bars fa-2x text-white" aria-hidden="true"></i>
         </button>
         <div class="d-none d-md-flex col">
           <ul class="navbar-nav flex-row align-items-center justify-content-center w-100">

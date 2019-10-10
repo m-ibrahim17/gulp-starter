@@ -9,6 +9,7 @@ const imagemin = require('gulp-imagemin')   // Require gulp-imagemin (Minify Ima
 const source = require('vinyl-source-stream')   // Require vinyl-source-stream (Conventional text streams at the start of your gulp); Docs -> https://github.com/hughsk/vinyl-source-stream
 const babelify = require('babelify')    // Require Babelify.js (Compile ES6 to ES5 using Babel.js); Docs -> https://github.com/babel/babelify
 const concat = require('gulp-concat')   // Require Concat for gulp (Concatinate files together); Docs -> https://github.com/gulp-community/gulp-concat
+const htmlmin = require('gulp-htmlmin') // Require gulp-htmlmin (Minify HTML pages); Docs -> https://github.com/jonschlinkert/gulp-htmlmin
 
 // Compile Sass
 gulp.task('sass', () => {
@@ -35,7 +36,10 @@ gulp.task('concatVendors', () => {
   gulp.src(['src/assets/js/vendors/jquery.min.js',
             'src/assets/js/vendors/bootstrap.bundle.min.js',
             'src/assets/js/vendors/mdb.min.js',
-            'src/assets/js/vendors/vue.min.js'])
+            'src/assets/js/vendors/swiper.min.js',
+            'src/assets/js/vendors/mixitup.min.js'
+            // 'src/assets/js/vendors/vue.min.js'
+          ])
     .pipe(concat('vendors.js'))
     .pipe(gulp.dest('src/assets/js'))
 })
@@ -52,9 +56,10 @@ gulp.task('serve', ['sass', 'ecmascript'], () => {
   gulp.watch(['src/*.html', 'src/assets/scss/*.scss', 'src/assets/js/*.js']).on('change', browserSync.reload)
 })
 
-// Copy HTML files
+// Copy and Minify HTML files
 gulp.task('copyhtml', () => {
   return gulp.src('src/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('dist'))
 })
 
@@ -74,15 +79,17 @@ gulp.task('minifyjs', () => {
 
 // Minify Images
 gulp.task('minifyimages', () => {
-  return gulp.src('src/assets/image/*')
-		.pipe(imagemin())
+  return gulp.src('src/assets/image/**/*')
+		.pipe(imagemin({
+      optimizationLevel: 3
+    }))
 		.pipe(gulp.dest('dist/assets/image'))
 })
 
 // Copy Favicons Images amd Fonts
 gulp.task('copyDir', () => {
   return gulp.src(['src/assets/favicons/**/*', 'src/assets/font/**/*'], {
-      base: 'src/assets'
+    base: 'src/assets'
   })
     .pipe(gulp.dest('dist/assets'))
 })
